@@ -1,0 +1,14 @@
+{
+  "item.zystuff.tiny_charcoal" : "Tiny Charcoal",
+  "item.zystuff.tiny_coal" : "Tiny Coal",
+
+  "item.zystuff.copper_helmet" : "Copper Helmet",
+  "item.zystuff.copper_chestplate" : "Copper Chestplate",
+  "item.zystuff.copper_leggings" : "Copper Leggings",
+  "item.zystuff.copper_boots" : "Copper Boots",
+
+  "block.zystuff.charcoal_block" : "Block of Charcoal",
+
+  "itemGroup.items_tab" : "ZyStuff Items",
+  "itemGroup.blocks_tab" : "ZyStuff Blocks"
+}

@@ -1,6 +1,8 @@
 package com.sirzypa.zystuff;
 
 import com.mojang.logging.LogUtils;
+import com.sirzypa.zystuff.block.ModBlocks;
+import com.sirzypa.zystuff.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +21,9 @@ public class ZyStuff
 
     public ZyStuff() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
