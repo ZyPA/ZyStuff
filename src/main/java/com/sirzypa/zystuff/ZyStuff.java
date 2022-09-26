@@ -24,8 +24,8 @@ public class ZyStuff
     public ZyStuff() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModArmors.Init();
-        ModTools.Init();
+        ModArmors.init();
+        ModTools.init();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

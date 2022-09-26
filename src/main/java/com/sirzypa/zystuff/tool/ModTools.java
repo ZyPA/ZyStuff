@@ -48,5 +48,5 @@ public class ModTools extends ModItems {
                     -1.0F,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
 
-    public static void Init() { ZyStuff.LOGGER.info("Modded tools has been initialized!"); }
+    public static void init() { ZyStuff.LOGGER.info("Modded tools has been initialized!"); }
 }
