@@ -26,7 +26,7 @@ public class ModArmors {
             ));
 
     public static final RegistryObject<ArmorItem> COPPER_LEGGINGS = ModItems.ITEMS.register(
-            "COPPER_LEGGINGS",
+            "copper_leggings",
             () -> new ArmorItem(
                     ModArmorMaterials.COPPER,
                     EquipmentSlot.LEGS,

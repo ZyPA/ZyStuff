@@ -17,7 +17,6 @@ import org.slf4j.Logger;
 @Mod(ZyStuff.MOD_ID)
 public class ZyStuff
 {
-
     public static final String MOD_ID = "zystuff";
     public static final Logger LOGGER = LogUtils.getLogger();
 
