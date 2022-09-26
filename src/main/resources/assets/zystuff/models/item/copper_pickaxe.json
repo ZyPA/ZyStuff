@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "zystuff:item/copper_pickaxe"
+  }
+}
