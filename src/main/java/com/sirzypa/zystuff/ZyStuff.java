@@ -1,6 +1,7 @@
 package com.sirzypa.zystuff;
 
 import com.mojang.logging.LogUtils;
+import com.sirzypa.zystuff.armor.ModArmors;
 import com.sirzypa.zystuff.block.ModBlocks;
 import com.sirzypa.zystuff.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,12 +17,14 @@ import org.slf4j.Logger;
 @Mod(ZyStuff.MOD_ID)
 public class ZyStuff
 {
+
     public static final String MOD_ID = "zystuff";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public ZyStuff() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModArmors.initArmors();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

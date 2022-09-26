@@ -6,6 +6,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.jetbrains.annotations.NotNull;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     COPPER(
@@ -16,7 +17,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_IRON,
             0.0F,
             0.0F,
-            Ingredient.of(Items.IRON_INGOT)
+            Ingredient.of(Items.COPPER_INGOT)
     );
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
@@ -29,7 +30,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Ingredient repairIngredient;
 
-    private ModArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections, int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance, Ingredient pRepairIngredient) {
+    ModArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections, int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance, Ingredient pRepairIngredient) {
         this.name = pName;
         this.durabilityMultiplier = pDurabilityMultiplier;
         this.slotProtections = pSlotProtections;
@@ -52,14 +53,17 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return this.enchantmentValue;
     }
 
+    @NotNull
     public SoundEvent getEquipSound() {
         return this.sound;
     }
 
+    @NotNull
     public Ingredient getRepairIngredient() {
         return this.repairIngredient;
     }
 
+    @NotNull
     public String getName() {
         return this.name;
     }
