@@ -7,8 +7,16 @@
   "item.zystuff.copper_leggings" : "Copper Leggings",
   "item.zystuff.copper_boots" : "Copper Boots",
 
+  "item.zystuff.copper_sword" : "Copper Sword",
+  "item.zystuff.copper_pickaxe" : "Copper Pickaxe",
+  "item.zystuff.copper_axe" : "Copper Axe",
+  "item.zystuff.copper_shovel" : "Copper Shovel",
+  "item.zystuff.copper_hoe" : "Copper Hoe",
+
   "block.zystuff.charcoal_block" : "Block of Charcoal",
 
   "itemGroup.items_tab" : "ZyStuff Items",
-  "itemGroup.blocks_tab" : "ZyStuff Blocks"
+  "itemGroup.blocks_tab" : "ZyStuff Blocks",
+  "itemGroup.tools_tab" : "ZyStuff Tools",
+  "itemGroup.armors_tab" : "ZyStuff Armors"
 }

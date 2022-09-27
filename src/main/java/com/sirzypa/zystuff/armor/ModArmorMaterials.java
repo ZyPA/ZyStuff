@@ -1,5 +1,6 @@
 package com.sirzypa.zystuff.armor;
 
+import com.sirzypa.zystuff.ZyStuff;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -31,7 +32,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final Ingredient repairIngredient;
 
     ModArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections, int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance, Ingredient pRepairIngredient) {
-        this.name = pName;
+        this.name = ZyStuff.MOD_ID + ":" + pName;
         this.durabilityMultiplier = pDurabilityMultiplier;
         this.slotProtections = pSlotProtections;
         this.enchantmentValue = pEnchantmentValue;
